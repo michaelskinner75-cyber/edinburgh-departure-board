@@ -1,6 +1,10 @@
 name: Update Edinburgh live departures
 
 on:
+  push:
+    paths:
+      - 'update_live.py'
+      - '.github/workflows/update-live.yml'
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
